@@ -1,0 +1,189 @@
+  /* tarjetas*/
+.tarjetas{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.card{
+ display: inline-block;
+ flex-direction: row;
+ align-items: center;
+ justify-content: center;
+ min-height: 100vh;
+}
+.card {
+  position: relative;
+  width: 400px;
+  height: 500px;
+  margin: 10px;
+}
+
+.card .face {
+  position: absolute;
+  width: 12rem;
+  height: 12rem;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.card .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+}
+
+.card .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .front h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  background: rgba(0,0,0,.4);
+  text-align: center;
+}
+
+.chocolate {
+  transform: perspective(600px) rotateY(180deg);
+  background: url(..//img/heladochocolate.jpg);
+  background-size: cover;
+  padding: 15px;
+  color: hsl(0, 0%, 100%);
+  text-shadow: 2px 2px 2px #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+}
+.frutilla {
+  transform: perspective(600px) rotateY(180deg);
+  background: url(..//img/helado\ frutilla\ 2.png);
+  background-size:cover;
+  padding: 15px;
+  color: hsl(0, 0%, 100%);
+  text-shadow: 2px 2px 2px #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+}
+.dulce {
+  transform: perspective(600px) rotateY(180deg);
+  background: url(..//img/dulce\ de\ leche\ helado1.jpg);
+  background-size: cover;
+  padding: 15px;
+  color: hsl(0, 0%, 100%);
+  text-shadow: 2px 2px 2px #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+}
+.limon {
+  transform: perspective(600px) rotateY(180deg);
+  background: url(..//img/helado\ limon.jpg);
+  background-size: cover;
+  padding: 15px;
+  color: hsl(0, 0%, 100%);
+  text-shadow: 2px 2px 2px #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+}
+/*frizzio*/
+.pizza {
+  transform: perspective(600px) rotateY(180deg);
+  background: url(..//img/pizza\ back.jpeg);
+  background-size: cover;
+  padding: 15px;
+  color: hsl(0, 0%, 100%);
+  text-shadow: 2px 2px 2px #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+}
+.bastoncitos {
+  transform: perspective(600px) rotateY(180deg);
+  background: url(..//img/bastones\ back.jpg);
+  background-size:cover;
+  padding: 15px;
+  color: hsl(0, 0%, 100%);
+  text-shadow: 2px 2px 2px #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+}
+.tarta {
+  transform: perspective(600px) rotateY(180deg);
+  background: url(..//img/tarta\ jamon\ y\ queso.jpg);
+  background-size: cover;
+  padding: 15px;
+  color: hsl(0, 0%, 100%);
+  text-shadow: 2px 2px 2px #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+}
+.hamburguesa {
+  transform: perspective(600px) rotateY(180deg);
+  background: url(..//img/hamburguesa\ back.jpg);
+  background-size: cover;
+  padding: 15px;
+  color: hsl(0, 0%, 100%);
+  text-shadow: 2px 2px 2px #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+}
+
+.card .back .link {
+  border-top: solid 1px #f3f3f3;
+  height: 50px;
+  line-height: 50px;
+}
+
+.card .back .link a {
+  color: #f3f3f3;
+}
+
+.card .back h3 {
+  font-size: 30px;
+  margin-top: 10px;
+  letter-spacing: 2px;
+}
+
+.card .back p {
+  letter-spacing: 5%;
+  font-size: 1rem;
+} 
+
+.card:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}

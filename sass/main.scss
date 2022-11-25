@@ -1,0 +1,24 @@
+/*inicio*/
+@use"./base/resets";
+
+//base
+//@use"./base/base";
+
+//abstract
+//@use"./abstract/abstracts";
+
+//menu barra
+@use"./base/menu";
+
+
+//footer
+@use"./components/footer";
+
+//contacto
+//@use"./contacto/contacto";
+
+//tarjetas
+@use"./tarjetas/tarjetas";
+
+//contacto
+@use"./contacto/contacto";

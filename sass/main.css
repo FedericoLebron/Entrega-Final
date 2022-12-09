@@ -4,11 +4,6 @@
   box-sizing: border-box;
   text-decoration: none;
 }
-@media (min-width: 700px), (max-width: 50000px) {
-  * {
-    padding: -1em -1em;
-  }
-}
 
 body {
   width: 100%;
@@ -31,12 +26,7 @@ section h1, h2 {
   color: #000000;
 }
 
-.conteiner {
-  padding: 0px 0px;
-  max-width: auto;
-  margin-top: 0rem;
-  overflow: auto;
-}
+
 
 /*logo grido*/
 .img {
@@ -53,7 +43,7 @@ section h1, h2 {
 
 /*header*/
 header {
-  width: 100%;
+  width: 102%;
   height: 50px;
   background: #220bb6;
   /* fallback for old browsers */
@@ -173,21 +163,17 @@ header {
     margin: 0;
     padding: 0.5em 0;
     width: 100%;
-    color: rgb(9, 4, 40);
+    color: rgb(194, 193, 197);
     background-color: #222;
   }
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
   }
 }
-footer {
-  background-color: hsla(248deg, 85%, 58%, 0.669);
+/*video*/
+.video{
   text-align: center;
-  padding: 2rem 0;
-  margin-right: -8rem;
-  margin-left: -8rem;
 }
-
 .texto-ayuda {
   margin-top: 2rem;
   text-align: center;
@@ -206,28 +192,22 @@ footer {
   height: 5rem;
 }
 
-.cajas {
-  background-image: linear-gradient(to left, blue, rgba(10, 5, 46, 0.731));
-}
-
 .sabores {
   transform: translate(10px 50px);
 }
-
-footer {
-  background-color: hsla(248deg, 85%, 58%, 0.669);
+.footer {
+  width: 100%;
+  background-color: rgba(81, 57, 239, 0.517);
   text-align: center;
-  padding: 2rem 0;
-  margin-right: -8rem;
-  margin-left: -8rem;
-}
-
-.texto-ayuda {
-  margin-top: 2rem;
-  text-align: center;
+  margin-top: 3rem;
+  padding-top: 1rem;
+  height: 8rem;
+  
 }
 
 /* tarjetas*/
+
+@media(min-width: 700px){
 .tarjetas {
   width: 100%;
   display: flex;
@@ -235,9 +215,10 @@ footer {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-}
+}}
 
 .card {
+  background-color: transparent;
   display: inline-block;
   flex-direction: row;
   align-items: center;
@@ -310,7 +291,7 @@ footer {
   text-shadow: 2px 2px 2px #000000;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
   box-shadow: 0 5px 10px #000;
 }
@@ -324,7 +305,7 @@ footer {
   text-shadow: 2px 2px 2px #000000;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
   box-shadow: 0 5px 10px #000;
 }
@@ -429,10 +410,16 @@ footer {
   transform: perspective(600px) rotateY(360deg);
 }
 
+/*mapa*/
+
+.mapa{
+  width: auto;
+ margin: auto;  
+}
+
 /* htmlcontacto*/
 .formulario {
-  background: #0d0467;
-  color: rgb(23, 30, 135);
+  color: rgb(177, 180, 208);
   line-height: 1.6;
   font-family: "Quicksand", sans-serif;
   padding: 0 1.5em;
@@ -545,11 +532,7 @@ ul {
     text-align: left;
   }
 }
-.footer {
-  margin-top: 3rem;
-  padding-top: 1rem;
-  height: 8rem;
-}
+
 
 .boton {
   display: flex;
